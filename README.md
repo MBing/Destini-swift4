@@ -8,7 +8,7 @@ Pro: Git clone to your Xcode projects folder.
 ## Finished App
 ![Finished App](https://github.com/londonappbrewery/Images/blob/master/Destini.gif)
 
-
+![Destini Structure overview](Destini-Story-Outline-and-Story-Structure.pdf)
 
 Copyright © The App Brewery
 
