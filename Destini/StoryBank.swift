@@ -26,22 +26,16 @@ class StoryBank {
         let answer3b = "It\'s him or me! You take the knife and stab him."
         
         let story4 = "What? Such a cop out! Did you know traffic accidents are the second leading cause of accidental death for most adult age groups?"
-        let answer4a = ""
-        let answer4b = ""
         
         let story5 = "As you smash through the guardrail and careen towards the jagged rocks below you reflect on the dubious wisdom of stabbing someone while they are driving a car you are in."
-        let answer5a = ""
-        let answer5b = ""
         
         let story6 = "You bond with the murderer while crooning verses of \"Can you feel the love tonight\". He drops you off at the next town. Before you go he asks you if you know any good places to dump bodies. You reply: \"Try the pier.\""
-        let answer6a = ""
-        let answer6b = ""
         
         list.append(Story(storyText: story1, answer1: answer1a, answer2: answer1b))
         list.append(Story(storyText: story2, answer1: answer2a, answer2: answer2b))
         list.append(Story(storyText: story3, answer1: answer3a, answer2: answer3b))
-        list.append(Story(storyText: story4, answer1: answer4a, answer2: answer4b))
-        list.append(Story(storyText: story5, answer1: answer5a, answer2: answer5b))
-        list.append(Story(storyText: story6, answer1: answer6a, answer2: answer6b))
+        list.append(Story(storyText: story4))
+        list.append(Story(storyText: story5))
+        list.append(Story(storyText: story6))
     }
 }
