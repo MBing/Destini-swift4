@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     let allStories = StoryBank()
     var currentStoryNumber: Int = 0
     var pressedButton: Int = 0
-
+    
     // UI Elements linked to the storyboard
     @IBOutlet weak var topButton: UIButton!         // Has TAG = 1
     @IBOutlet weak var bottomButton: UIButton!      // Has TAG = 2
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         bottomButton.isHidden = false
         currentStoryNumber = 0
     }
-
+    
     func nextQuestion() {
         storyTextView.text = allStories.list[currentStoryNumber].text
         topButton.setTitle(allStories.list[currentStoryNumber].answerA,for: .normal)
@@ -47,7 +47,7 @@ class ViewController: UIViewController {
     
     // User presses one of the buttons
     @IBAction func buttonPressed(_ sender: UIButton) {
-    
+        
         print(sender.tag)
         print(currentStoryNumber)
         if (currentStoryNumber == 2 || (currentStoryNumber == 1 && sender.tag == 2) || currentStoryNumber == 4 || currentStoryNumber == 5) {
@@ -65,10 +65,10 @@ class ViewController: UIViewController {
         } else if (currentStoryNumber == 2 && sender.tag == 2) {
             currentStoryNumber = 4 // story 5
         }
-    
+        
         nextQuestion()
     }
-
+    
     func lastQuestion() {
         topButton.isHidden = true
         bottomButton.isHidden = true
